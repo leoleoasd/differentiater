@@ -4,10 +4,10 @@ public class Sin extends Element {
         this.inner = inner;
     }
 
-    public Element derivative(){
+    public Element diff(){
         return new Mul(
                 new Cos(inner),
-                inner.derivative()
+                inner.diff()
         );
     }
 

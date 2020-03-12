@@ -7,9 +7,9 @@ public class Div extends Element {
         this.b = b;
     }
 
-    public Element derivative(){
-        Element da = a.derivative();
-        Element db = b.derivative();
+    public Element diff(){
+        Element da = a.diff();
+        Element db = b.diff();
 
         return new Div(
                 new Add(

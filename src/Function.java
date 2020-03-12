@@ -24,10 +24,10 @@ public class Function extends Element {
         return this;
     }
 
-    public Element derivative(){
+    public Element diff(){
         return new Mul(
-                inner.derivative().substitute(inde),
-                inde.derivative()
+                inner.diff().substitute(inde),
+                inde.diff()
         ).trim();
     }
 

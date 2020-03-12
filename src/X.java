@@ -1,6 +1,6 @@
 public class X extends Element {
 
-    public Constant derivative(){
+    public Constant diff(){
         return new Constant(1);
     }
 

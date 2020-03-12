@@ -5,12 +5,12 @@ public class Cos extends Element {
         this.inner = inner;
     }
 
-    public Element derivative(){
+    public Element diff(){
         return new Mul(
                 new Neg(
                         new Sin(inner)
                 ),
-                inner.derivative()
+                inner.diff()
         );
     }
 

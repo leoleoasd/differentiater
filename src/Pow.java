@@ -7,13 +7,13 @@ public class Pow extends Element {
         this.b = b;
     }
 
-    public Element derivative(){
+    public Element diff(){
         return new Mul(
                 new Mul(
                         new Pow(a, new Constant(b.inner-1)),
                         b
                 ),
-                a.derivative()
+                a.diff()
         ).trim();
     }
 

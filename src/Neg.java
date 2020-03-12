@@ -5,8 +5,8 @@ public class Neg extends Element {
         this.inner = inner;
     }
 
-    public Element derivative(){
-        return new Neg(inner.derivative());
+    public Element diff(){
+        return new Neg(inner.diff());
     }
 
     public String toString(){

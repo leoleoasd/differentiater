@@ -5,9 +5,9 @@ public class Ln extends Element {
         this.inner = inner;
     }
 
-    public Element derivative(){
+    public Element diff(){
         return new Div(
-                inner.derivative(),
+                inner.diff(),
                 inner
         );
     }

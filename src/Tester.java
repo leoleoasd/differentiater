@@ -1,7 +1,3 @@
-import java.util.Scanner;
-import java.util.Stack;
-import java.util.StringTokenizer;
-
 public class Tester{
     public static void main(String[] args){
 
@@ -19,7 +15,7 @@ public class Tester{
 
         // Simple like this!
         // 2 * x
-        System.out.println(e.derivative());
+        System.out.println(e.diff());
 
 
         // Any layers are supported!
@@ -43,7 +39,7 @@ public class Tester{
 
         // Simple like this!
         // (((cos((sin(x) * x)) * (sin(x) + (cos(x) * x))) * x) + sin((sin(x) * x)))
-        System.out.println(e.derivative());
+        System.out.println(e.diff());
 
         e = new Mul(
                 new X(),
@@ -54,7 +50,7 @@ public class Tester{
         System.out.println(e);
 
         // 2
-        System.out.println(e.derivative());
+        System.out.println(e.diff());
 
         // Wrap it with a function
         Function f = new Function(e);
@@ -63,6 +59,6 @@ public class Tester{
         f.substitute(new Pow(new X(), new Constant(2)));
 
         // 4*x
-        System.out.println(f.derivative());
+        System.out.println(f.diff());
     }
 }

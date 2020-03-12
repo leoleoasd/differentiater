@@ -5,7 +5,7 @@ public class Constant extends Element {
         this.inner = in;
     }
 
-    public Constant derivative(){
+    public Constant diff(){
         return new Constant(0);
     }
 
