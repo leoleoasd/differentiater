@@ -30,14 +30,14 @@ public class Div extends Element {
     }
 
     public Element trim(){
+        a = a.trim();
+        b = b.trim();
         if(this.a.equals(new Constant(0))){
             return new Constant(0);
         }
         if(this.b.equals(new Constant(1))){
             return a.trim();
         }
-        a = a.trim();
-        b = b.trim();
         return this;
     }
 

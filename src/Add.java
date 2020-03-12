@@ -26,14 +26,14 @@ public class Add extends Element {
     }
 
     public Element trim(){
+        this.a = this.a.trim();
+        this.b = this.b.trim();
         if(this.a.equals(new Constant(0))){
             return this.b.trim();
         }
         if(this.b.equals(new Constant(0))){
             return this.a.trim();
         }
-        this.a = this.a.trim();
-        this.b = this.b.trim();
         return this;
     }
 

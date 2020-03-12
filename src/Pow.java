@@ -18,6 +18,7 @@ public class Pow extends Element {
     }
 
     public Element trim(){
+        this.a = this.a.trim();
         if(this.a.equals(new Constant(0))){
             return new Constant(0);
         }
@@ -30,7 +31,6 @@ public class Pow extends Element {
         if(this.b.equals(new Constant(1))){
             return a.trim();
         }
-        a = a.trim();
         return this;
     }
 
