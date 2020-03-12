@@ -52,13 +52,10 @@ public class Tester{
         // 2
         System.out.println(e.diff());
 
-        // Wrap it with a function
-        Function f = new Function(e);
-
         // Will replace any X with a X**2!
-        f.substitute(new Pow(new X(), new Constant(2)));
+        e.substitute(new Pow(new X(), new Constant(2)));
 
         // 4*x
-        System.out.println(f.diff());
+        System.out.println(e.diff());
     }
 }

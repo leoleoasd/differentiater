@@ -14,14 +14,14 @@ public class Add extends Element {
     }
 
     public Element substitute(Element x){
+        a.substitute(x);
+        b.substitute(x);
         if(this.a instanceof X){
             this.a = x;
         }
         if(this.b instanceof X){
             this.b = x;
         }
-        a.substitute(x);
-        b.substitute(x);
         return this;
     }
 

@@ -20,4 +20,8 @@ public class Constant extends Element {
             return false;
         }
     }
+
+    public Element substitute(Element x){
+        return this;
+    }
 }

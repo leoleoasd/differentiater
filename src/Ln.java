@@ -22,4 +22,12 @@ public class Ln extends Element {
         }
         return false;
     }
+
+    public Element substitute(Element x){
+        inner.substitute(x);
+        if(this.inner instanceof X){
+            this.inner = x;
+        }
+        return this;
+    }
 }

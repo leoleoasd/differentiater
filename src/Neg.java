@@ -12,4 +12,12 @@ public class Neg extends Element {
     public String toString(){
         return "-"+inner;
     }
+
+    public Element substitute(Element x){
+        inner.substitute(x);
+        if(this.inner instanceof X){
+            this.inner = x;
+        }
+        return this;
+    }
 }

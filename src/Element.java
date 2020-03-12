@@ -12,9 +12,7 @@ public abstract class Element{
      * @param x 要代入的元素
      * @return Element
      */
-    public Element substitute(Element x){
-        return this;
-    }
+    abstract public Element substitute(Element x);
 
     public Element trim(){
         return this;

@@ -37,8 +37,9 @@ public class Pow extends Element {
     public Element substitute(Element x){
         if(this.a instanceof X){
             this.a = x;
+        }else{
+            a.substitute(x);
         }
-        a.substitute(x);
         return this;
     }
 
